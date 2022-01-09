@@ -1,0 +1,260 @@
+@font-face {
+  font-family: "Avenir Next";
+  /* src: url(./Metropolis/Metropolis-Black.otf);
+  src: url(./Metropolis/Metropolis-ExtraLight.otf);
+  src: url(./Metropolis/Metropolis-Light.otf);
+  src: url(./Metropolis/Metropolis-Medium.otf);
+  src: url(./Metropolis/Metropolis-SemiBold.otf);
+  src: url(./Metropolis/Metropolis-Thin.otf);
+  src: url(./Metropolis/Metropolis-Regular.otf);
+  src: url(./Metropolis/Metropolis-Bold.otf); */
+  src: url(./Metropolis/Metropolis-ExtraBold.otf);
+}
+
+@font-face {
+  font-family: "Avenir Next Regular";
+  src: url(./Metropolis/Metropolis-Regular.otf);
+}
+
+@font-face {
+  font-family: "Avenir Next Medium";
+  src: url(./Metropolis/Metropolis-Medium.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background: url(./backgroundhome3.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 180vh;
+  filter: brightness(1.2);
+  filter: saturate(2);
+  position: relative;
+}
+
+.home h2 {
+  color: #e96f92;
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Avenir Next", sans-serif, Helvetica;
+  display: flex;
+  justify-content: center;
+}
+
+.home span {
+  color: #ffeddb;
+  font-size: 22px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 0.4rem;
+  font-family: "Avenir Next", sans-serif, Helvetica;
+}
+
+.signature {
+  max-width: 25%;
+  height: auto;
+  display: block;
+  margin: 0.2rem auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+  font-family: "Avenir Next", sans-serif, Helvetica;
+}
+
+nav a {
+  color: #ffeddb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.balloon {
+  max-width: 20%;
+  height: auto;
+  position: absolute;
+  bottom: 5%;
+  left: 70%;
+  animation: ballonAnimation 40s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ballonAnimation {
+  from {
+    bottom: 5%;
+  }
+  to {
+    bottom: 85%;
+  }
+}
+
+.star {
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  background-color: #ffeddb;
+  width: 15px;
+  height: 15px;
+  animation: starAnimation 2s infinite ease-in-out;
+  position: absolute;
+  top: 10px;
+  left: 40px;
+}
+
+.star1 {
+  top: 40px;
+  left: 120px;
+  animation-delay: 2s;
+}
+
+.star2 {
+  top: 210px;
+  left: 20px;
+  animation-delay: 1s;
+}
+
+.star3 {
+  top: 120px;
+  left: 70px;
+  animation-delay: 5s;
+}
+
+.star4 {
+  top: 520px;
+  left: 240px;
+  animation-delay: 4s;
+}
+.star5 {
+  top: 370px;
+  left: 160px;
+  animation-delay: 6s;
+}
+
+@keyframes starAnimation {
+  from {
+    opacity: 0;
+    filter: brightness(1);
+  }
+  to {
+    opacity: 1;
+    filter: brightness(4);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .home {
+    background: url(./backgroundhome3.png);
+  }
+}
+
+.about,
+.work {
+  /* background-color: #ffb531; */
+  background-color: #ffeddb;
+  text-align: center;
+  font-family: "Avenir Next", sans-serif, Helvetica;
+  padding-top: 8rem;
+}
+
+.work {
+  padding-top: 4rem;
+}
+
+.about h2,
+.work h2 {
+  color: #1b2947;
+  font-size: 35px;
+}
+
+.about p {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+  color: #1b2947;
+  line-height: 1.8;
+  font-family: "Avenir Next Regular", sans-serif, Helvetica;
+}
+
+.about hr {
+  width: 70%;
+  margin: 0 auto;
+  border-color: #f6f6f6;
+  border-radius: 1px;
+}
+
+/* .contact {
+  background-color: #63e9f3;
+  background-color: #ffb531;
+  text-align: center;
+  font-family: "Avenir Next", sans-serif, Helvetica;
+}
+
+.contact h2 {
+  color: #1b2947;
+  font-size: 35px;
+}
+
+.email-container a,
+.social-media-container a {
+  text-decoration: none;
+  color: #1b2947;
+  font-size: 18px;
+}
+
+.email-me,
+.find-me {
+  font-size: 18px;
+  color: #1b2947;
+}
+
+.email-container a strong,
+.social-media-container a strong {
+  color: #e96f92;
+  font-weight: bold;
+} */
+
+.works img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  border: 2px solid #1b2947;
+}
+
+.works h3 {
+  font-family: "Avenir Next", sans-serif, Helvetica;
+  color: #1b2947;
+  font-size: 35px;
+  margin-top: 0.5rem;
+}
+
+.works-button-container button {
+  background-color: #e96f92;
+  width: 110px;
+  height: 42px;
+  color: #ffeddb;
+  border: none;
+  margin: 1.4rem 10px;
+  font-family: "Avenir Next Regular", sans-serif, Helvetica;
+  cursor: pointer;
+}
+.google-work,
+.spin-work,
+.travel-work,
+.tshirt-work,
+.weather-work {
+  margin-top: 4rem;
+}
